@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+	<style>
+		.tq80{
+			margin-top: 30px;
+		}
+		.tq80 li{
+			border-bottom: 1px solid #ccc;
+			line-height: 30px;
+			padding: 20px 10px;
+			cursor: pointer;
+		}
+		.tq80 li:hover{
+			background: #eee;
+		}
+		.tq80 span{
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">重点领域信息公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<div class="catright">
+				<ul class="tq16">
+					<h3>政民互动</h3>
+					<li>12345政府热线</li>
+					<li>社情民意通道</li>
+					<li>在线访谈</li>
+					<li>回应问切</li>
+					<li>民意征集</li>
+					<li>网上调查</li>
+				</ul>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="artshowm">
+				<div class="tq3">
+					<h3>民意征集</h3>
+				</div>
+				<ul class="tq80">
+					<li onclick="location.href=''">
+						<h3>标题</h3>
+						<div>简介</div>
+						<span>2018年8月1日15:11:25</span>
+					</li>
+					<li onclick="location.href=''">
+						<h3>标题</h3>
+						<div>简介</div>
+						<span>2018年8月1日15:11:25</span>
+					</li>
+					<li onclick="location.href=''">
+						<h3>标题</h3>
+						<div>简介</div>
+						<span>2018年8月1日15:11:25</span>
+					</li>
+					<li onclick="location.href=''">
+						<h3>标题</h3>
+						<div>简介</div>
+						<span>2018年8月1日15:11:25</span>
+					</li>
+				</ul>
+				<div class="page">
+					<a href="">首页</a>
+					<a href="">上一页</a>
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">下一页</a>
+					<a href="">尾页</a>
+					<a href="">共？？条信息/共？？页</a>
+					<span>转到第<input type="text" style="width: 30px;">页</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.catright').outerHeight();
+		var h2 = $('.artshowm').outerHeight();
+		if(h1>h2){
+			$('#zwgkcont,.side,.aside').height(h1);
+		}else{
+			$('#zwgkcont,.side,.aside').height(h2);
+		}
+	</script>
+</body>
+</html>

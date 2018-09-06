@@ -1,0 +1,351 @@
+@charset "utf-8";
+/*写信页*/
+#xxycont{
+	margin:0 auto;
+	padding: 20px;
+	height: 1200px;
+	width: 1200px;
+	background: #fff;
+}
+.tq12{
+	height: 40px;
+	border-bottom: 2px #0068b7 solid;
+	line-height: 40px;
+	width: 100%;
+}
+.tq12 h3{
+	background: #0068b7;
+	width: 160px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	float: left;
+}
+.xing{
+	color: #0068b7;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.tq13{
+	padding: 40px 20px;
+}
+.tq13 span{
+	color: red;
+}
+.tq13 dt{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	float: left;
+}
+.tq13 dd{
+	float: left;
+	width: 1000px;
+	float: right;
+	height: 40px;
+}
+.tq13 input[type=text]{
+	width: 400px;
+	height: 30px;
+	margin-top: 5px;
+}
+.tq13 select{
+	width: 100px;
+	height: 30px;
+	margin-top: 5px;
+}
+.tq13 input[type=radio]{
+	height: 30px;
+	margin-top:5px;
+	float: left;
+	width: 20px;
+}
+.tq13 input[type=submit]{
+	padding: 10px 40px;
+	background: #0068b7;
+	color: #fff;
+	border: 0;
+	margin:20px 0 0 160px;
+}
+.tq13 input[type=reset]{
+	padding: 10px 20px;
+	background: #999;
+	border: 0;
+	margin-left: 30px;
+}
+.radio{
+	float: left;
+	line-height: 40px;
+}
+#tq14{
+	height: 200px;
+}
+#tq15{
+	height: 200px;
+}
+.tq16{
+	border: 1px solid #ccc;
+	border-top:2px solid #0068b7;
+	padding: 10px 20px 20px 20px;
+}
+.tq16 h3{
+	color: #0068b7;
+	font-weight:normal;
+}
+.tq16 li{
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	background: url(../images/interaction-icons.png) no-repeat 220px -3264px #eee;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.tq16 li:hover{
+	color: red;
+	font-size: 18px;
+}
+.tq17 td{
+	border-left: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+.tq17 td:nth-child(2n){
+	border-right: 1px solid #999;
+}
+.tq18{
+	border: 1px solid #ccc;
+	border-top:2px solid #0068b7;
+	margin-top:20px;
+}
+.tq18 h3{
+	color: #0068b7;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 20px;
+}
+.tq19 td{
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.tq19 td:first-child{
+	border-left:0;
+}
+.tq19 tr:nth-child(2n-1){
+	background: #eee;
+}
+.wyxx{
+	background: #0797b6;
+	color: #fff;
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+}
+.wycx{
+	float: left;
+	width: 160px;
+	height: 60px;
+	line-height: 60px;
+	text-indent: 60px;
+	margin-left: 160px;
+	background: url(../images/Petition-icons.png) 19px -151px no-repeat;
+}
+.tq20 select{
+	float: left;
+	width: 100px;
+	height: 40px;
+	margin-top: 5px;
+}
+.tq20 input[type=text]{
+	padding-left: 10px;
+	width: 200px;
+	float: left;
+	height: 40px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	margin-top: 5px;
+}
+.tq20 input[type=submit]{
+	float: left;
+	height: 40px;
+	border: 0;
+	background: #FFA800;
+	width: 80px;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.tq20 input[type=submit]:hover{
+	background: #bf5b00;
+}
+/*晋中政讯*/
+.tq22{
+	height: 800px;
+}
+.tq22 li{
+	width: 170px;
+	height: 216px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+.tq22 img{
+	margin-left: 6px;
+}
+.tq23{
+	position: absolute;
+	width: 170px;
+	height: 36px;
+	background: rgba(0,0,0,.6);
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+	margin-top: -36px;
+}
+.tq23:hover{
+	height: 60px;
+	margin-top: -60px;
+	cursor: pointer;
+}
+.tq24{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	box-sizing: border-box;
+	border-bottom: 1px #ccc solid;
+}
+.tq25{
+	float: left;
+	padding: 0 25px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.tq26{
+	display: none;
+}
+.tq26 li{
+	padding: 30px 30px;
+	border-bottom: 1px dotted #333;
+	min-height: 250px;
+}
+.tq27{
+	text-indent: 20px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.sj{
+	background: url(../images/icons-zwgk.png) 0 -1527px no-repeat;
+}
+.zz{
+	background: url(../images/icons-zwgk.png) 3px -1611px no-repeat;
+}
+.tq26 a{
+	color: #0068b7;
+}
+.tq28{
+	padding: 20px;
+}
+.tq28 li{
+	line-height: 30px;
+}
+.tq29{
+	float: right;
+	color: #999;
+}
+.tq30{
+	color: green;
+}
+.tq28 a{
+	color: #000;
+}
+.tq28 a:hover{
+	color: red;
+}
+/*在线访谈文章页*/
+#zxftcont{
+	margin: 0 auto;
+	width: 1200px;
+	height: 1900px;
+	background: #fff;
+	padding: 20px;
+}
+.tq35{
+	height: 50px;
+	width: 100%;
+	border:1px solid #ccc;
+	background: #eee;
+	line-height: 50px;
+	text-align: center;
+	font-size: 24px;
+	color: #0068b7;
+	margin-bottom: 20px;
+}
+.tq33{
+	width: 500px;
+	max-height: 400px;
+}
+.tq32{
+	float: right;
+	width: 640px;
+	border-bottom: 1px dotted #999;
+}
+.tq32 li{
+	line-height: 40px;
+}
+.tq34{
+	border-bottom: 1px solid #999;
+}
+.tq34 h3{
+	border-bottom: 2px red solid;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.tq36{
+	height: 930px;
+	width: 1180;
+	padding: 10px;
+	overflow: auto;
+	margin-top: 10px;
+}
+.tq36 li{
+	border-bottom: 1px dotted #999;
+	padding: 10px;
+}
+.tq36 li:hover{
+	background: #f0fff0;
+}
+.character{
+	color: #004986;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+.tq37{
+	margin-top: 20px;
+}
+.tq37 li{
+	width: 280px;
+	text-align: center;
+	float: left;
+	margin: 0 10px;
+}
+.tq37 img{
+	width: 280px;
+}
+.tq37 a{
+	color: #000;
+}
+.tq37 a:hover{
+	color: red;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/moblie.css">
+	<link rel="stylesheet" href="../css/moblie2.css">
+	<title>晋中政府网</title>
+</head>
+<body>
+	<div class="bar">
+		<a href="javascript:history.go(-1)" class="back">
+			<div class="direct"></div>
+		</a>
+		<div class="seclist">政民互动</div>
+		<img src="../images/sobar.png" alt="" class="search">
+	</div>
+	<div class="searbg">
+		<form class="searbox">
+			<input type="text" placeholder="  请输入关键字" class="words">
+			<input type="submit" value="搜索" class="searbtn">
+		</form>
+	</div>
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政民互动</a> >
+			<a href="">二级目录</a>
+		</em>
+	</div>
+	<div class="content">
+		<div class="conttitle">标题</div>
+		<div class="spanbox" style="text-align: right;"><span id="small">T</span> <span id="big">T</span></div>
+		<div id="text">
+			<p> curl命令是一个利用URL规则在命令行下工作的文件传输工具。它支持文件的上传和...若同时从同一站点下载多个文件时,curl会尝试重用链接(connection)。...</p>
+		</div>
+		<div id="share"></div>
+	</div>
+	<div class="foot">
+		<div class="zftb">
+			<img src="../images/biaozhi.png" alt="">
+		</div>
+		<div>
+			<span>晋中市人民政府主办      市直各部门协办</span>
+		</div>
+		<div class="addr">
+			<span>地址：      晋中市榆次区新华街199号      建议用1920*1080 分辨率浏览</span>
+		</div>
+	</div>
+	<script src="../js/moblie.js"></script>
+	<script type="text/javascript">
+		window.onresize=resize;
+		resize();
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+	</script>
+</body>
+</html>

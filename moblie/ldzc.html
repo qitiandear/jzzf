@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/moblie.css">
+	<link rel="stylesheet" href="../css/moblie2.css">
+	<title>晋中政府网</title>
+</head>
+<body>
+	<div class="bar">
+		<a href="javascript:history.go(-1)" class="back">
+			<div class="direct"></div>
+		</a>
+		<div class="seclist">领导之窗</div>
+		<img src="../images/sobar.png" alt="" class="search">
+	</div>
+	<div class="searbg">
+		<form class="searbox">
+			<input type="text" placeholder="  请输入关键字" class="words">
+			<input type="submit" value="搜索" class="searbtn">
+		</form>
+	</div>
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">领导之窗</a>
+		</em>
+	</div>
+	<div class="content">
+		<ul class="ldbox">
+			<li class="bge active" id="sw">市委领导</li>
+			<li class="bge" id="rd">人大领导</li>
+			<li class="bge" id="zf">政府领导</li>
+			<li class="bge" id="zx">政协领导</li>
+		</ul>
+		<ul class="boxbt" id="sw1">
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+		</ul>
+		<ul class="boxbt" id="rd1">
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市人大常委主任、党组书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+		</ul>
+		<ul class="boxbt" id="zf1">
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委副书记、市长：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+		</ul>
+		<ul class="boxbt" id="zx1">
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市政协委员会主席、党组书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+			<li onclick="location.href=''">
+				<div class="ldzc sj">市委书记：</div>
+				<div class="ldzc zz">我的职责：</div>
+			</li>
+		</ul>
+	</div>
+	<div class="foot">
+		<div class="zftb">
+			<img src="../images/biaozhi.png" alt="">
+		</div>
+		<div>
+			<span>晋中市人民政府主办      市直各部门协办</span>
+		</div>
+		<div class="addr">
+			<span>地址：      晋中市榆次区新华街199号      建议用1920*1080 分辨率浏览</span>
+		</div>
+	</div>
+	<script src="../js/moblie.js"></script>
+	<script type="text/javascript">
+		window.onresize=resize;
+		resize();
+		$(function(){
+			$("#sw").click(function(){
+				$("#sw1").show();
+				$("#rd1,#zf1,#zx1").hide();
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$("#rd").click(function(){
+				$("#rd1").show();
+				$("#sw1,#zf1,#zx1").hide();
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$("#zf").click(function(){
+				$("#zf1").show();
+				$("#rd1,#sw1,#zx1").hide();
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+			$("#zx").click(function(){
+				$("#zx1").show();
+				$("#rd1,#zf1,#sw1").hide();
+				$(this).addClass("active").siblings().removeClass("active");
+			})
+		})
+	</script>
+</body>
+</html>

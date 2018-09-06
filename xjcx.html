@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政民互动</a> >
+			<a href="">12345政府热线</a> >
+			<a href="">信件查询</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="xjcxcont">
+		<form action="">
+			<dl class="tq8">
+				<dt><span>*</span>公民/法人证件号码：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>查询码：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>验证码：</dt>
+				<dd><input type="text" class="iyzm"><img src="images/home.jpg" alt="" style="margin-left: 10px;"></dd>
+				<dt></dt>
+				<dd><input type="submit" value="查询"></dd>
+			</dl>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+	</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>QRCODE</title>
+</head>
+
+<body>
+<!--<div id="outdiv"></div>-->
+<!--<video id="video" width="640" height="640" autoplay></video>-->
+<!--<button id="snap">Snap Photo</button>-->
+<!--<canvas id="canvas" width="640" height="640"></canvas>-->
+<canvas id="qr-canvas" width="800" height="600"></canvas>
+<video id="v" autoplay></video>
+<script type="text/javascript" src="llqrcode.js"></script>
+<!--<script type="text/javascript" src="vconsole.min.js"></script>-->
+<script type="text/javascript">
+   //是否成功调用getUserMedia标识
+   var gUM=false;
+   //画布getContext对象
+   var gCtx = null;
+   //视频展示对象
+   var v=document.getElementById("v");
+   var n=navigator;
+
+   var gCanvas = document.getElementById("qr-canvas");
+   gCtx = gCanvas.getContext("2d");
+   gCtx.clearRect(0, 0, 800, 600);
+   qrcode.callback = function(e){
+      //结果回调
+      alert(e)
+   }
+   //不同getUserMedia处理
+   if(n.getUserMedia)
+      n.getUserMedia({video: true, audio: false}, success, error);
+   else
+   if(n.mediaDevices.getUserMedia)
+      n.mediaDevices.getUserMedia({video: { facingMode: "environment"} , audio: false})
+            .then(success)
+            .catch(error);
+   else
+   if(n.webkitGetUserMedia)
+   {
+      webkit=true;
+      n.webkitGetUserMedia({video:true, audio: false}, success, error);
+   }
+   else
+   if(n.mozGetUserMedia)
+   {
+      moz=true;
+      n.mozGetUserMedia({video: true, audio: false}, success, error);
+   }
+   //getUserMedia调用成功
+   function success(stream) {
+      v.src = window.URL.createObjectURL(stream);
+      // window.location.href=("https://www.baidu.com");
+      gUM=true;
+      setTimeout(captureToCanvas, 500);
+   }
+   //getUserMedia调用失败
+   function error(error) {
+      gUM=false;
+      return;
+   }
+
+   //将视频流放到画布
+   function captureToCanvas() {
+      if(gUM)
+      {
+         try{
+            gCtx.drawImage(v,0,0);
+            try{
+               qrcode.decode();
+            }
+            catch(e){
+               console.log(e);
+               setTimeout(captureToCanvas, 500);
+            };
+         }
+         catch(e){
+            console.log(e);
+            setTimeout(captureToCanvas, 500);
+         };
+      }
+   }
+</script>
+</body>
+
+</html>

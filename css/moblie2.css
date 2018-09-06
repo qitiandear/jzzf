@@ -1,0 +1,282 @@
+.ldbox{
+	height: 3rem;
+	width: 9.5rem;
+}
+.ldbox li{
+	float: left;
+	width: 4.5rem;
+	text-align: center;
+	height: .9rem;
+	line-height: .9rem;
+	margin-top: .3rem;
+}
+.ldbox li:nth-child(2n){
+	margin-left: .5rem;
+}
+.bge{
+	background: #eee;
+}
+.active{
+	background: #0068b7;
+	color: #fff;
+}
+.boxbt li{
+	border-bottom: 1px dotted #999;
+	padding: 0 .3rem;
+}
+.boxbt li:last-child{
+	border-bottom: 0;
+}
+.ldzc{
+	text-indent: 20px;
+	line-height: 30px;
+	font-size: 16px;
+	margin-bottom: .2rem;
+}
+.sj{
+	color: #0068b7;
+	background: url(../images/icons-zwgk.png) 0 -1525px no-repeat;
+}
+.zz{
+	background: url(../images/icons-zwgk.png) 3px -1611px no-repeat;
+}
+#rd1,#zf1,#zx1{
+	display: none;
+}
+.com{
+	width: 9.5rem;
+	height: 45px;
+	background: #3691E6;
+}
+.com h3{
+	height: 48px;
+	padding: 0 .5rem;
+	color: #fff;
+	position: absolute;
+	margin-top:-3px;
+	line-height: 48px;
+	margin-left: 10px;
+	background: #FFA800;
+}
+.newlist{
+	padding:10px;
+}
+.newlist li{
+	height: .8rem;
+}
+.newlist span{
+	float: right;
+	color: #999;
+}
+.nbor li{
+	border-bottom: 1px dotted #ddd;
+	height: 1rem;
+	line-height: 1rem;
+}
+.contab td{
+	border: 1px solid #84caff;
+	font-size: 14px;
+}
+.contd1{
+	background: #b7e0ff;
+	color: #0068b7;
+	text-align: right;
+	width: 24%;
+}
+.artlist3{
+	font-size: .45rem;
+	width: 9.5rem;
+	margin: 0 auto;
+}
+.artlist3 li{
+	line-height: .8rem;
+	padding: .3rem .2rem;
+}
+video{
+	width: 9.5rem;
+	margin:1rem auto;
+}
+.uphd{
+	font-size: .46rem;
+	width: 9.5rem;
+	margin:0 auto;
+	background: #eee;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #999;
+}
+.uphd h3{
+	display:inline;
+	padding: .18rem .4rem .27rem .4rem;
+	text-align: center;
+	height: 1.2rem;
+	box-sizing: border-box;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 2px solid #0068b7;
+	background: #eee;
+	color: #0068b7;
+}
+.yes{
+	font-size: .5rem;
+	background: #0068b7;
+	float: left;
+	width: 5rem;
+	color: #fff;
+	margin-left: 1rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+.no{
+	font-size: .5rem;
+	background: #eee;
+	float: left;
+	width: 2rem;
+	margin-left: .4rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+.whd{
+	width: 9.5rem;
+	margin:0 auto;
+	height: 1rem;
+	font-size: .45rem;
+	line-height: 1rem;
+	border-bottom: .05rem solid #0068b7;
+	margin-bottom: .3rem;
+}
+.whd h3{
+	display: inline;
+	background: #0068b7;
+	color: #fff;
+	padding: .1rem .3rem .2rem .3rem;
+}
+.whd span{
+	font-size: .3rem;
+	color: #0068b7;
+}
+.formbox{
+	font-size: .45rem;
+	padding: .25rem;
+}
+.formbox li{
+	height: 1rem;
+	line-height: 1rem;
+}
+.fname{
+	float: left;
+	width: 30%;
+	text-align: right;
+}
+.finput{
+	float: left;
+	width: 70%;
+}
+.finput input[type=text]{
+	width: 5rem;
+	height: .6rem;
+}
+.finput span{
+	color: red;
+	margin-left: .1rem;
+}
+.finput select{
+	width: 5.05rem;
+	height: .6rem; 
+}
+.formbox input[type=submit]{
+	border:0;
+	background: #0068b7;
+	padding: .2rem 1.2rem;
+	color: #fff;
+	margin-left: 1rem;
+	font-size: .45rem;
+}
+.formbox input[type=reset]{
+	border:0;
+	padding: .2rem .6rem;
+	margin-left: .5rem;
+	font-size: .45rem;
+}
+.finput textarea{
+	height: 4rem;
+	width: 5.05rem;
+}
+.fname span{
+	color: red;
+}
+.wsdc{
+	padding: .25rem;
+}
+.wsdc li{
+	line-height: .8rem;
+	font-size: .45rem;
+	border-bottom: .02rem dotted #999;
+}
+.sp1{
+	background: #0068b7;
+	height: .25rem;
+	width: .08rem;
+	float: left;
+	margin-right: .03rem;
+	margin-top: .38rem;
+}
+.sp2{
+	background: #0068b7;
+	height: .15rem;
+	width: .08rem;
+	float: left;
+	margin-right: .03rem;
+	margin-top: .48rem;
+}
+.sp3{
+	background: #0068b7;
+	height: .35rem;
+	width: .08rem;
+	float: left;
+	margin-right: .2rem;
+	margin-top: .28rem;
+}
+.zxft{
+	padding: .25rem;
+	font-size: .45rem;
+}
+.zxft li{
+	line-height: .8rem;
+	border-bottom: .02rem dotted #999;
+}
+.zxft span{
+	color: #999;
+}
+.zxft li:last-child{
+	border-bottom: 0;
+}
+.notes div{
+	line-height: .9rem;
+}
+.wzsl{
+	height: 1rem;
+	margin-top: .3rem;
+	border-bottom: .04rem solid #ccc;
+}
+.wzsl h3{
+	line-height: 1rem;
+	height: 1rem;
+	border-bottom: .04rem solid #d34f12;
+	width: 3rem;
+	text-align: center;
+	color: #d34f12;
+}
+.cont{
+	margin:.6rem 0;
+}
+.cont li{
+	line-height: .8rem;
+	border-bottom: .02rem dotted #999;
+}
+.cont span{
+	color: #0068b7;
+}

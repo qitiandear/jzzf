@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+	<style>
+		.tianqi{
+			color: #0068b7;
+			font-weight: bold;
+			background: #eee;
+			box-sizing: border-box;
+			border-top: 3px #0068b7 solid;
+			border-left:1px #ccc solid;
+			border-right:1px #ccc solid;
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side" style="height: 1200px;">
+			<ul id="side1">
+				<h3><div class="i"></div>政府信息公开</h3>
+				<li onclick="location.href='https://www.baidu.com'">领导之窗</li>
+				<li onclick="location.href=''" style="background-position: 20% -2096px;">信息公开指南</li>
+				<li onclick="location.href='infomation.html'" style="background-position: 20% -411px;">政府信息公开目录</li>
+				<li onclick="location.href=''" style="background-position: 20% -581px;">信息公开制度与保障</li>
+				<li onclick="location.href=''" style="background-position: 20% -327px;">信息公开工作年报</li>
+				<li onclick="location.href=''" style="background-position: 20% -242px;">依申请公开</li>
+				<li onclick="location.href=''" style="background-position: 20% -327px;">政策解读</li>
+			</ul>
+			<ul class="side3">
+				<li id="s31">
+					<div class="zwgki"></div>
+					重点领域信息公开
+				</li>
+				<li id="s32">
+					<div class="zwgki" style="background-position: 20px -1058px;background-color: #E3292A;"></div>
+					权责清单
+				</li>
+			</ul>
+			<div id="tq1">
+				<div id="tq11">主题分类</div>
+			</div>
+			<ul id="tq2">
+				<li><div class="tq21"></div><a href="">领导之窗</a></li>
+				<li><div class="tq21"></div><a href="">法律法规</a></li>
+				<li><div class="tq21"></div><a href="">公告公示</a></li>
+				<li><div class="tq21"></div><a href="">政府文件</a></li>
+				<li><div class="tq21"></div><a href="">政府工作报告</a></li>
+				<li><div class="tq21"></div><a href="">发展规划</a></li>
+				<li><div class="tq21"></div><a href="">财政预决算</a></li>
+				<li><div class="tq21"></div><a href="">统计信息</a></li>
+				<li><div class="tq21"></div><a href="">运行监测</a></li>
+				<li><div class="tq21"></div><a href="">政府采购</a></li>
+				<li><div class="tq21"></div><a href="">人事信息</a></li>
+				<li><div class="tq21"></div><a href="">应急管理</a></li>
+				<li><div class="tq21"></div><a href="">重大项目</a></li>
+				<li><div class="tq21"></div><a href="">信息公开工作年报</a></li>
+			</ul>
+			<ul class="side4">
+				<h3><div class="i"></div>政府工作报告</h3>
+				<form action="" id="sbox">
+					<input type="radio" checked>文件名
+					<input type="radio">索引号
+					<input type="text" placeholder="请输入关键字">
+					<input type="submit" value="搜索" style="background: red;">
+				</form>
+				<div id="high">高级搜索
+				</div>
+			</ul>
+		</div>
+		<div class="tq" id="tqtwo">
+			<div class="tq3">
+				<h3>公开信息高级搜索</h3>
+			</div>
+			<dl>
+				<dt>索引号</dt>
+				<dd><input type="text"></dd>
+				<dt>标题</dt>
+				<dd><input type="text" placeholder="标题"></dd>
+				<dt>内容</dt>
+				<dd><input type="text"></dd>
+				<dt>文号</dt>
+				<dd><input type="text"></dd>
+				<dt>主题分类</dt>
+				<dd>
+					<select name="" id="">
+						<option value="">--请选择--</option>
+					</select>
+				</dd>
+				<dt></dt>
+				<dd><input type="submit" value="搜索"></dd>
+			</dl>
+		</div>
+		<div class="tq" id="tqone" >
+			<div class="bao">
+				<h1 style="text-align: center;margin: 30px 0;">标题</h1>
+				<div id="artsh" style="text-align: center;margin-bottom: 20px;">
+					<span>【字体：<span id="small">小</span> <span id="big">大</span>】</span>
+				</div>
+				<div id="text">
+					申请人提出申请的，应当提供身份证复印件。法人或其他组织提出申请时，应当提供组织机构代码证复印件或营业执照复印件。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。晋中市政府信息分为三类：一是主动公开的信息。市政府及其部门在各自职责范围内依法应当主动公开的政府信息。二是依申请公开的信息。公民、法人或其他组织可根据需要向市政府及其部门申请获取相关信息。三是不予公开的信息。依照《中华人民共和国保守国家保密法》及其他相关法律、法规和国家有关规定，涉及国家秘密、商业秘密和个人隐私的政府信息不予公开。
+				</div>
+				<div id="artshare"></div>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.side').outerHeight();
+		var h2 = $('.bao').outerHeight();
+		if(h1>h2){
+			$('#zwgkcont').height(h1);
+		}else{
+			$('#zwgkcont').height(h2);
+		}
+		$(function(){
+			$('#small').click(function(){
+				var fz = $('#text').css('font-size');
+				fz = fz.substring(0,fz.length-2);
+				var fzc = --fz;
+				fzc = fzc+'px';
+				$('#text').css('font-size',''+fzc+'');
+				var h1 = $('.side').outerHeight();
+				var h2 = $('.bao').outerHeight();
+				if(h1>h2){
+					$('#zwgkcont').height(h1);
+				}else{
+					$('#zwgkcont').height(h2);
+				}
+			})
+			$('#big').click(function(){
+				var fz = $('#text').css('font-size');
+				fz = fz.substring(0,fz.length-2);
+				var fzc = ++fz;
+				fzc = fzc+'px';
+				$('#text').css('font-size',''+fzc+'');
+				var h1 = $('.side').outerHeight();
+				var h2 = $('.bao').outerHeight();
+				if(h1>h2){
+					$('#zwgkcont').height(h1);
+				}else{
+					$('#zwgkcont').height(h2);
+				}
+			})
+			$('#high').click(function(){
+				$('#tqone').css('display','none');
+				$('#tqtwo').show();
+			})
+		})
+	</script>
+</body>
+</html>

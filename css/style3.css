@@ -1,0 +1,157 @@
+@charset "utf-8";
+.qzclqdcont{
+	margin:0 auto;
+	padding: 20px;
+	width: 1200px;
+	background: #fff;
+}
+.qzlist{
+	height: 240px;
+	width: 100%;
+}
+.qzlist li{
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #ddd;
+	width: 168px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	margin:5px 15px;
+}
+.qzlist li:hover{
+	background: #0068b7;
+	color: #fff;
+}
+.fdkj1 li{
+	line-height: 30px;
+	padding: 0 10px;
+	border-bottom: 1px dotted #333;
+}
+.fdkj1 span{
+	float: right;
+	color: #999;
+}
+.fdkj1 a{
+	color: #000;
+}
+.fdkj1 a:hover{
+	color: red;
+}
+.sq{
+	float: left;
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #eee;
+	margin-right: 25px;
+	cursor: pointer;
+}
+.tqmore:hover{
+	color: red;
+}
+.active{
+	background: #0068b7;
+	color: #fff;
+}
+.tqque{
+	width: 10px;
+	height: 10px;
+	background: #0068b7;
+	position: absolute;
+	margin-top: 35px;
+	margin-left: 75px;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+}
+#text1{
+	width: 888px;
+}
+#text2{
+	display: none;
+}
+.tq40{
+	height: 40px;
+	border-bottom: 2px solid #0068b7;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.tq40 h3{
+	background: #0068b7;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 160px;
+	color: #fff;
+}
+.tq40 span{
+	position: absolute;
+	margin-left: 180px;
+	margin-top: -30px;
+	color: #0068b7;
+}
+.tq41{
+	height: 200px;
+	width: 100%;
+}
+.tq41 dt{
+	width: 10%;
+	float: left;
+	text-align: right;
+	height: 40px;
+	line-height: 40px;
+}
+.tq41 span,.tq42 span{
+	color: red;
+}
+.tq41 dd{
+	width: 36%;
+	float: left;
+	height: 40px;
+}
+.tq42 dt{
+	width: 10%;
+	float: left;
+	text-align: right;
+	height: 40px;
+	line-height: 40px;
+}
+.tq42 dd{
+	width: 86%;
+	float: left;
+	height: 40px;
+}
+.tq42 input[type=radio]{
+	height: 30px;
+	margin-top:5px;
+	float: left;
+	width: 20px;
+}
+.tq42 input[type=submit]{
+	border:0;
+	background: #0068b7;
+	color: #fff;
+	padding: 10px 40px;
+	margin-top: 20px;
+}
+.tq42 input[type=reset]{
+	border:0;
+	background: #eee;
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.tq43 li{
+	line-height: 30px;
+	height: 30px;
+	padding: 0 10px;
+	border-bottom: 1px dotted #999;
+}
+.tq43 span{
+	float: right;
+	color: #999;
+}

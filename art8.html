@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style3.css">
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">重点领域信息公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<ul>
+				<li id="sw" class="tq89 tq90" onclick="location.href=''">市委领导</li>
+				<div class="tq91" id="sw1">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</div>
+				<li id="rd" class="tq89" onclick="location.href=''">人大领导</li>
+				<ul class="tq91" id="rd1">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+				<li id="zf" class="tq89" onclick="location.href=''">政府领导</li>
+				<ul class="tq91" id="zf1">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+				<li id="zx" class="tq89" onclick="location.href=''">政协领导</li>
+				<ul class="tq91" id="zx1">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+			</ul>
+		</div>
+		<div class="aside" style="height: 780px;">
+			<div class="tq3">
+				<h3>人名</h3>
+			</div>
+			
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		$("#rd1,#zf1,#zx1").hide();
+		$("#sw").click(function(){
+			$("#sw1").show();
+		})
+		$("#rd").click(function(){
+			$("#rd1").show();
+		})
+	</script>
+</body>
+</html>

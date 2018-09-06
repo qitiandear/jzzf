@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/jzlsj.css">
+	<title>晋中市商务粮食局</title>
+</head>
+<body style="background: #f1f1f1;">
+	<div id="header"></div>
+	<div class="tqcont">
+		<div class="tqcontl">
+			<ul class="xxbox">
+				<li>信息公开规定</li>
+				<li style="background-position: 50px -94px;">信息公开指南</li>
+				<li style="background-position: 50px -203px;">信息公开目录</li>
+				<li style="background-position: 50px -313px;">信息公开年报</li>
+				<li style="background-position: 50px -421px;">依申请公开</li>
+			</ul>
+			<div class="depbox">
+				<h3>部门信息公开</h3>
+				<ul class="depcont">
+					<li>
+						<div class="side" style="background-position: -56px 0px;"></div>
+						<div class="clone"></div>
+						单位概况
+					</li>
+					<li>
+						<div class="side" ></div>
+						<div class="clone"></div>领导介绍
+					</li>
+					<li>
+						<div class="side"></div>
+						<div class="clone"></div>工作动态
+					</li>
+					<li>
+						<div class="side"></div>
+						<div class="clone"></div>通知公告
+					</li>
+					<li>
+						<div class="side"></div>
+						<div class="clone"></div>机构职能
+					</li>
+					<li>
+						<div class="side"></div>
+						<div class="clone"></div>政策文件
+					</li>
+					<li>
+						<div class="side" style="background-position: -74px -36px;" id="plus"></div>
+						<div class="clone"></div>权责清单
+						<ul class="qzqd">
+							<li>
+								<div class="side"></div>
+								<div class="clone"></div>
+								行政许可
+							</li>
+							<li>
+								<div class="side"></div>
+								<div class="clone"></div>
+								行政处罚
+							</li>
+							<li>
+								<div class="side" style="background-position: -56px -36px;"></div>
+								<div class="clone"></div>
+								其他类
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tqcontr">
+			<div class="hd">
+				<h3>单位概况</h3>
+			</div>
+			<div class="path">
+				<ul>
+					<li style="background: url(../jzlsjimg/icons.png) no-repeat 0 -744px;text-indent: 20px;">您的位置：</li>
+					<li>首页 ></li>
+					<li>信息公开 ></li> 
+					<li>商粮局 ></li>
+					<li>工作状态</li>
+				</ul>
+			</div>
+			<div class="tbcont">
+				<form action="">
+					信息搜索
+					<input type="text" placeholder="请输入关键词">
+					<input type="submit" value="搜索">
+				</form>
+				<table cellspacing="0">
+					<tr>
+						<th class="t1">发布机构</th>
+						<th class="t2">信息名称</th>
+						<th class="t3">生成日期</th>
+						<th class="t3">废止日期</th>
+					</tr>
+					<tr>
+						<td class="t1">商粮局</td>
+						<td class="t2"><a href="">晋中市商务粮食综合行政执法队 聚焦重点领域 开展随机抽查</a></td>
+						<td class="t3">2018-08-10</td>
+						<td class="t3"></td>
+					</tr>
+					<tr>
+						<td class="t1">商粮局</td>
+						<td class="t2">晋中市商务粮食综合行政执法队 聚焦重点领域 开展随机抽查</td>
+						<td class="t3">2018-08-10</td>
+						<td class="t3"></td>
+					</tr>
+					<tr>
+						<td class="t1">商粮局</td>
+						<td class="t2">晋中市商务粮食综合行政执法队 聚焦重点领域 开展随机抽查</td>
+						<td class="t3">2018-08-10</td>
+						<td class="t3"></td>
+					</tr>
+				</table>
+				<div class="page">
+					<a href="">首页</a>
+					<a href="">上一页</a>
+					<a href="" class="active">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">下一页</a>
+					<a href="">尾页</a>
+					<a style="color: #000;">共条信息/共页</a>
+					<a style="color: #000;">
+						转到第
+						<select name="" id=""></select>
+						页
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script>
+		$("#header").load('header.html');
+		$("#footer").load('footer.html');
+		$(function(){
+			$('#plus').click(function(){
+				var m = $('.qzqd').css('display');
+				if (m == 'none') {
+					$('.qzqd').show();
+				}else{
+					$('.qzqd').hide();
+				}
+			})
+		})
+	</script>
+</body>
+</html>

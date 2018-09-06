@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">重点领域信息公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<div class="catright">
+				<ul class="tq16">
+					<h3>12345政府热线</h3>
+					<li>写信须知</li>
+					<li>我要写信</li>
+					<li>信件公开</li>
+					<li>信件查询</li>
+				</ul>
+				<div class="tq18">
+					<h3>信件回复统计</h3>
+					<table cellspacing="0" class="tq19">
+						<tr>
+							<td>排名</td>
+							<td>部门</td>
+							<td>受理数</td>
+							<td>办理数</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>榆次区物业管理</td>
+							<td>22</td>
+							<td>33</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>榆次区物业管理</td>
+							<td>22</td>
+							<td>33</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>榆次区物业管理</td>
+							<td>22</td>
+							<td>33</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>榆次区物业管理</td>
+							<td>22</td>
+							<td>33</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>榆次区物业管理</td>
+							<td>22</td>
+							<td>33</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="artshowm">
+				<div class="tq3">
+					<h3>公开信件</h3>
+				</div>
+				<div class="wyxx">
+					我要写信
+				</div>
+				<div class="wycx">信件搜索</div>
+				<form action="" class="tq20">
+					<select name="" id="">
+						<option value="">全部部门</option>
+					</select>
+					<input type="text" placeholder="请输入关键字">
+					<input type="submit" value="搜索">
+				</form>
+				<table cellspacing="0">
+					<tr>
+						<th width="3%"></th>
+						<th width="60%" style="text-align: left;text-indent: 60px;">信件主题</th>
+						<th width="17%">办理部门</th>
+						<th width="10%">办结日期</th>
+						<th width="10%">受理日期</th>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+					<tr>
+						<td style="text-align: center;">
+							<img src="picture/mail.png" alt="">
+						</td>
+						<td style="text-align: left;text-indent: 5px;"><a href="">sss</a></td>
+						<td>ss</td>
+						<td>eee</td>
+						<td>rrr</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.catright').outerHeight();
+		var h2 = $('.artshowm').outerHeight();
+		if(h1>h2){
+			$('#zwgkcont,.side,.aside').height(h1);
+		}else{
+			$('#zwgkcont,.side,.aside').height(h2);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*通用*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #e8f2fb url(../jzlfwimg/body.jpg) center top no-repeat;
+    min-width: 1200px;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+a:hover{
+	text-decoration: underline;
+}
+img{ 
+	border:none;
+}
+dl,dd,dt,ul,ol,li{ 
+	list-style:none;
+}
+/*首页*/
+.welcome{
+	width: 1200px;
+	margin: 0 auto;
+	height: 40px;
+	line-height:40px; 
+	text-indent: 20px;
+}

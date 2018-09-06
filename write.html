@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政民互动</a> >
+			<a href="">12345政府热线</a> >
+			<a href="">咨询（留言）</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="xxycont">
+		<div class="tq12">
+			<h3>请填写信件内容</h3>
+			<span class="xing">（注意：标有*的必须填写）</span>
+		</div>
+		<form action="" class="tq13">
+			<dl>
+				<dt><span>*</span> 主题：</dt>
+				<dd><input type="text"></dd>
+				<dt><span>*</span> 信件类型：</dt>
+				<dd>
+					<select name="" id="">
+						<option value="">咨询</option>
+					</select>
+				</dd>
+				<dt><span>*</span> 是否公开：</dt>
+				<dd>
+					<input type="radio" checked><div class="radio">用户愿意公开</div>
+					<input type="radio"><div class="radio">用户不愿意公开</div>
+				</dd>
+				<dt><span>*</span> 联系人：</dt>
+				<dd><input type="text"></dd>
+				<dt><span>*</span> 联系电话：</dt>
+				<dd><input type="text"></dd>
+				<dt><span>*</span> 身份证号：</dt>
+				<dd><input type="text"></dd>
+				<dt>联系地址：</dt>
+				<dd><input type="text"></dd>
+				<dt>职业：</dt>
+				<dd><input type="text"></dd>
+				<dt id="tq14"><span>*</span> 内容：</dt>
+				<dd id="tq15">
+					<textarea name="" id="" cols="50" rows="10"></textarea>
+				</dd>
+				<dt><span>*</span> 验证码：</dt>
+				<dd><input type="text"><img src="images/home.jpg" alt=""></dd>
+				<dt></dt>
+				<dd>
+					<input type="submit" value="提交">
+					<input type="reset" value="重置">
+				</dd>
+			</dl>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+	</script>
+</body>
+</html>

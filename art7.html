@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">重点领域信息公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<div class="catright">
+				<ul class="tq16">
+					<h3>政民互动</h3>
+					<li>12345政府热线</li>
+					<li>社情民意通道</li>
+					<li>在线访谈</li>
+					<li>回应问切</li>
+					<li>民意征集</li>
+					<li>网上调查</li>
+				</ul>
+			</div>
+		</div>
+		<div class="aside">
+			<div class="artshowm">
+				<h1 style="text-align: center;">四论贯彻落实全国组织工作会议精神</h1>
+				<div class="change">
+					<span>来源：晋中新闻网</span>
+					<span>发布时间：2018-07-10</span>
+					<span>浏览次数：10 次</span>
+					<span>【字体：<span id="small">小</span> <span id="big">大</span>】</span>
+				</div>
+				<div id="text">
+					习近平总书记在全国组织工作会议上，专门强调要做好新时代年轻干部工作，大力发现培养选拔优秀年轻干部，“建设一支忠实贯彻新时代中国特色社会主义思想、符合新时期好干部标准、忠诚干净担当、数量充足、充满活力的高素质专业化年轻干部队伍。”这是党和国家事业发展的百年大计。坚持和发展中国特色社会主义，关键在党，关键在人，归根到底在培养造就一代又一代可靠接班人。我们党历来高度重视年轻干部工作，培养接班人有比较完备的制度。早在延安时期，就提出“有计划地培养大批的新干部，就是我们的战斗任务”；上世纪60年代初，提出了培养造就千百万无产阶级革命事业接班人的战略任务；党的十一届三中全会后，针对干部队伍青黄不接的严峻形势
+
+				</div>
+				<div id="artshare">
+					<a href="">【打印正文】</a>
+					<div id="share"></div>
+				</div>
+				<div class="rela">
+					<h3>相关信息</h3>
+				</div>
+				<div class="rela">
+					<div style="margin-top: 20px;">暂无资料</div>
+				</div>
+				</div>
+			</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.catright').outerHeight();
+		var h2 = $('.artshowm').outerHeight();
+		if(h1>h2){
+			$('#zwgkcont,.side,.aside').height(h1);
+		}else{
+			$('#zwgkcont,.side,.aside').height(h2);
+		}
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+			var h1 = $('.catright').outerHeight();
+			var h2 = $('.artshowm').outerHeight();
+			if(h1>h2){
+				$('#zwgkcont,.side,.aside').height(h1);
+			}else{
+				$('#zwgkcont,.side,.aside').height(h2);
+			}
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+			var h1 = $('.catright').outerHeight();
+			var h2 = $('.artshowm').outerHeight();
+			if(h1>h2){
+				$('#zwgkcont,.side,.aside').height(h1);
+			}else{
+				$('#zwgkcont,.side,.aside').height(h2);
+			}
+		})
+	</script>
+</body>
+</html>

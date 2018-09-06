@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">晋中政讯</a> 
+		</em>
+	</div>
+	<!-- 文章内容展示 -->
+	<div class="content">
+		<div class="artshow">
+			<div id="tptitle">
+				<h3>晋中政讯</h3>
+				<div style="border-bottom: 1px solid #999;height: 50px;float: left;width: 728px;box-sizing: border-box;"></div>
+			</div>
+			<ul class="tq22">
+				<li>
+					<a href="http://www.sxjz.gov.cn/Upload/main/2017/201712/index.html">
+						<img src="images/jzzx.jpg" alt="">
+						<div class="tq23">等待</div>
+					</a>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+				<li>
+					<img src="images/jzzx.jpg" alt="">
+					<div class="tq23">等待</div>
+				</li>
+			</ul>
+			<div class="page">
+				<a href="">首页</a>
+				<a href="">上一页</a>
+				<a href="">&nbsp;&nbsp;1&nbsp;&nbsp;</a>
+				<a href="">&nbsp;&nbsp;2&nbsp;&nbsp;</a>
+				<a href="">下一页</a>
+				<a href="">尾页</a>
+				<a href="">共？？条信息/共？？页</a>
+				<span>转到第<input type="text" style="width: 30px;">页</span>
+			</div>
+		</div>
+		<div class="catright">
+			<ul class="catalog">
+				<h3>晋中政讯</h3>
+				<li><a href="">2017年</a></li>
+				<li><a href="">2016年</a></li>
+			</ul>
+			<form class="catalog">
+				<h3>栏目内搜索</h3>
+				<li>
+					<select name="" id="searbs">
+						<option value="">晋中政讯</option>
+					</select>
+				</li>
+				<li>
+					<input type="text" placeholder="请输入关键词" class="keyword">
+					<input type="submit" name="" value="搜索" class="sbot">
+				</li>
+			</form>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.catright').outerHeight();
+		var h2 = $('.artshow').outerHeight();
+		if(h1>h2){
+			$('.content').height(h1);
+		}else{
+			$('.content').height(h2);
+		}
+		$('.catalog li a:first').css({"color":"white","background-color":"#0068B7","    background-position":"16px -1889px","border-color":"#0068B7"});
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+			var h1 = $('.catright').outerHeight();
+			var h2 = $('.artshow').outerHeight();
+			if(h1>h2){
+				$('.content').height(h1);
+			}else{
+				$('.content').height(h2);
+			}
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+			var h1 = $('.catright').outerHeight();
+			var h2 = $('.artshow').outerHeight();
+			if(h1>h2){
+				$('.content').height(h1);
+			}else{
+				$('.content').height(h2);
+			}
+		})
+	</script>
+</body>
+</html>

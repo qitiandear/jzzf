@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<ul>
+		<li id="tm1" class="tq89 tq90" onclick="location.href=''">市委领导</li>
+		
+		<li id="tm2" class="tq89" onclick="location.href=''">人大领导</li>
+		<ul class="tq91" id="tm21">
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+		</ul>
+		<li id="tm3" class="tq89" onclick="location.href=''">政府领导</li>
+		<ul class="tq91" id="tm31">
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+		</ul>
+		<li id="tm4" class="tq89" onclick="location.href=''">政协领导</li>
+		<ul class="tq91" id="tm41">
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+			<div><span>人名</span>市委书记</div>
+		</ul>
+	</ul>
+	<div class="tq91" id="tm11">
+		<div><span>人名</span>市委书记</div>
+		<div><span>人名</span>市委书记</div>
+		<div><span>人名</span>市委书记</div>
+	</div>
+	<script>
+	$(function(){
+		$('#tm1').click(function(){
+			$('#tm11').css('display','none');
+		})
+	})
+	</script>	
+</body>
+</html>

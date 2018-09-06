@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/moblie.css">
+	<title>晋中政府网</title>
+</head>
+<body>
+	<div class="bar">
+		<a href="javascript:history.go(-1)" class="back">
+			<div class="direct"></div>
+		</a>
+		<div class="seclist">政务公开</div>
+		<img src="../images/sobar.png" alt="" class="search">
+	</div>
+	<div class="searbg">
+		<form class="searbox">
+			<input type="text" placeholder="  请输入关键字" class="words">
+			<input type="submit" value="搜索" class="searbtn">
+		</form>
+	</div>
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">一级栏目</a> >
+			<a href="">二级栏目</a>
+		</em>
+	</div>
+	<div class="hd">
+		<h3 class="addbox" id="js">信息检索</h3>
+		<h3 class="addbottom" id="ml">公开目录</h3>
+		<div class="hdadd addbottom"></div>
+	</div>
+	<div class="xxjs">
+		<input type="radio" value="1" checked>文件名
+		<input type="radio" value="0">索引号
+		<br>
+		<input type="text" placeholder=" 请输入关键字">
+		<input type="submit" value="搜索">
+		<div class="high" onclick="location.href='highsearch.html'">高级搜索</div>
+	</div>
+	<ul class="gkml">
+		<li><a href="">领导之窗</a></li>
+		<li><a href="">法律法规</a></li>
+		<li><a href="">公告公示</a></li>
+		<li><a href="">政府文件</a></li>
+		<li><a href="">政府工作报告</a></li>
+		<li><a href="">发展规划</a></li>
+		<li><a href="">财政预决算</a></li>
+		<li><a href="">统计信息</a></li>
+		<li><a href="">运行监测</a></li>
+		<li><a href="">政府采购</a></li>
+		<li><a href="">人事信息</a></li>
+		<li><a href="">应急管理</a></li>
+		<li><a href="">重大项目</a></li>
+		<li><a href="">信息公开工作年报</a></li>
+		<li><a href="">信息公开制度与保障</a></li>
+	</ul>
+	<div class="hd">
+		<h3 class="addbox">所有信息</h3>
+		<div class="hdline"></div>
+	</div>
+	<ul class="artlist">
+		<li><a href="">标题标题标题标题标题标题标题标题标题</a></li>
+		<li><a href="">标题</a></li>
+		<li><a href="">标题</a></li>
+		<li><a href="">标题</a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+	<div class="page">
+		<div class="pagebtn" style="float: left;"><a href="">上一页</a></div>
+		<span>共条信息/共页</span>
+		<div class="pagebtn" style="float: right;"><a href="">下一页</a></div>
+	</div>
+	<div class="foot">
+		<div class="zftb">
+			<img src="../images/biaozhi.png" alt="">
+		</div>
+		<div>
+			<span>晋中市人民政府主办      市直各部门协办</span>
+		</div>
+		<div class="addr">
+			<span>地址：      晋中市榆次区新华街199号      建议用1920*1080 分辨率浏览</span>
+		</div>
+	</div>
+	<script src="../js/moblie.js"></script>
+	<script type="text/javascript">
+		window.onresize=resize;
+		resize();
+		$(function(){
+			$('#js').click(function(){
+				$('.xxjs').show();
+				$('.gkml').hide();
+				$(this).addClass('addbox').siblings().removeClass('addbox');
+				$('#ml').addClass('addbottom');
+				$('#js').removeClass('addbottom');
+			})
+			$('#ml').click(function(){
+				$('.gkml').show();
+				$('.xxjs').hide();
+				$(this).addClass('addbox').siblings().removeClass('addbox');
+				$('#js').addClass('addbottom');
+				$('#ml').removeClass('addbottom');
+			})
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style3.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政民互动</a> >
+			<a href="">社情民意通道</a> >
+			<a href="">咨询（留言）</a> >
+			<a href="">社情民意</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="tq40">
+			<h3>咨询人信息</h3>
+			<span>（注意：标有*的必须填写；请填写电子邮箱，以方便我们向您反馈处理信息）</span>
+		</div>
+		<form action="">
+			<dl class="tq41">
+				<dt><span>*</span>姓名：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>昵称：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>职业：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>身份证号：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>联系电话：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>电子邮件：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt><span>*</span>联系地址：</dt>
+				<dd><input type="text" style="width: 800px;height: 30px;margin-top: 5px;"></dd>
+			</dl>
+			<div class="tq40">
+				<h3>咨询事项信息</h3>
+				<span>（注意：标有*的必须填写）</span>
+			</div>
+			<dl class="tq42">
+				<dt><span>*</span>标题：</dt>
+				<dd><input type="text" class="itext"></dd>
+				<dt style="height: 100px;"><span>*</span>内容：</dt>
+				<dd style="width: 1000px;height: 100px;"><textarea name="" id="" cols="48" rows="5"></textarea></dd>
+				<dt><span>*</span>咨询类型：</dt>
+				<dd>
+					<select name="" id="">
+						<option value="">咨询</option>
+					</select>
+				</dd>
+				<dt><span>*</span>信件分类：</dt>
+				<dd>
+					<select name="" id="">
+						<option value="">未选择</option>
+					</select>
+				</dd>
+				<dt><span>*</span>愿意公开：</dt>
+				<dd>
+					<input type="radio"><div class="radio">愿意</div>
+					<input type="radio"><div class="radio">不愿意</div>
+				</dd>
+				<dt><span>*</span>验证码：</dt>
+				<dd><input type="text" class="itext"><img src="images/home.jpg" alt=""></dd>
+				<dt></dt>
+				<dd>
+					<input type="submit" value="提交">
+					<input type="reset" value="重置">
+				</dd>
+			</dl>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+	</script>
+</body>
+</html>

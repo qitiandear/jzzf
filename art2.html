@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">一级栏目</a> >
+			<a href="">二级栏目</a> >
+			详细内容
+		</em>
+	</div>
+	<!-- 文章内容展示 -->
+	<div class="content">
+		<table cellspacing="0">
+			<tr>
+				<td class="tdtitle">索引号：</td>
+				<td></td>
+				<td class="tdtitle">发布机构：</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="tdtitle">发文日期：</td>
+				<td></td>
+				<td class="tdtitle">主题分类：</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="tdtitle">文 号：</td>
+				<td></td>
+				<td class="tdtitle">关键词：</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td class="tdtitle">内容概述：</td>
+				<td></td>
+				<td class="tdtitle">相关解读：</td>
+				<td></td>
+			</tr>
+		</table>
+		<h1 id="art2title">标题</h1>
+		<div id="text">的地方的多大对方付费 </div>
+		<div id="artsh">
+			<span>【字体：<span id="small">小</span> <span id="big">大</span>】</span>
+			<div id="share"></div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+	</script>
+</body>
+</html>

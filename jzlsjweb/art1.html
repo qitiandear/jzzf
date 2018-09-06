@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/jzlsj.css">
+	<title>晋中市商务粮食局</title>
+</head>
+<body style="background: #f1f1f1;">
+	<div id="header"></div>
+	<div class="cont">
+		<div class="addr">
+			您的位置：
+			<a href="">首页</a> >
+			<a href="">信息公开</a> >
+			<a href="">商粮局</a> >
+			<a href="">工作状态</a>
+		</div>
+		<hr>
+		<div class="art">
+			<table cellspacing="0" style="border-left: 1px solid #ccc;border-top: 1px solid #ccc">
+				<tr>
+					<td class="at1">索引号：</td>
+					<td class="at2">jz-slj-2018-00252</td>
+					<td class="at3">发布机构：</td>
+					<td class="at4">商粮局</td>
+				</tr>
+				<tr>
+					<td class="at1">生成日期：</td>
+					<td class="at2">2018-08-10</td>
+					<td class="at3">废止日期：</td>
+					<td class="at4"></td>
+				</tr>
+				<tr>
+					<td class="at1">文 号：</td>
+					<td class="at2"></td>
+					<td class="at3">主题分类：</td>
+					<td class="at4">工作动态</td>
+				</tr>
+				<tr>
+					<td class="at1">关键词：</td>
+					<td colspan="3" style="border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;"></td>
+				</tr>
+				<tr>
+					<td class="at1">内容概述：</td>
+					<td colspan="3" style="border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;"></td>
+				</tr>
+			</table>
+			<h2>标题</h2>
+			<div id="text">
+				大大大等待说手上说手上
+			</div>
+			<div id="function">
+				<div id="funleft">
+					<span>【字体：<span id="small">小</span> <span id="big">大</span>】</span>
+				</div>
+				<div id="share2"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<script>
+		$("#header").load('header.html');
+		$("#footer").load('footer.html');
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style3.css">
+	<title>晋中政府网</title>
+	<style>
+		.tq89{
+			background: url(images/gov-zdly.png) 97% -210px no-repeat;
+		}
+		.tq90{
+			color: #fff;
+			background: url(images/gov-zdly.png) 97% -155px no-repeat #0068b7;
+		}
+		.tq91{
+			padding: 15px;
+			display: none;
+			border:1px solid #eee;
+		}
+		.tq91 li{
+			padding: 10px 20px;
+			border:1px solid #ccc;
+			background: #eee;
+			margin:10px 0;
+		}
+		.tq91 span{
+			margin-right: 20px;
+		}
+		.ld{
+			height: 40px;
+			line-height: 40px;
+			text-indent: 60px;
+			cursor: pointer;
+			text-indent: 20px;
+			border:1px solid #eee;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">重点领域信息公开</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<ul>
+				<li class="e1 ld tq89 tq90">市委领导</li>
+				<ul class="p1 tq91">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+			</ul>
+			<ul>
+				<li class="e2 ld tq89">人大领导</li>
+				<ul class="p2 tq91">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+			</ul>
+			<ul>
+				<li class="e3 ld tq89">政府领导</li>
+				<ul class="p3 tq91">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+			</ul>
+			<ul>
+				<li class="e4 ld tq89">政协领导</li>
+				<ul class="p4 tq91">
+					<li><span>人名</span>市委书记</li>
+					<li><span>人名</span>市委书记</li>
+				</ul>
+			</ul>
+			<script>
+				$('.p1').show();
+				$(function(){
+					$('.e1').click(function(){
+						$('.p1').show();
+						$('.p2,.p3,.p4').hide();
+						$(this).addClass('tq90');
+						$('.e2,.e3,.e4').removeClass('tq90');
+					});
+					$('.e2').click(function(){
+						$('.p2').show();
+						$('.p1,.p3,.p4').hide();
+						$(this).addClass('tq90');
+						$('.e1,.e3,.e4').removeClass('tq90');
+					})
+					$('.e3').click(function(){
+						$('.p3').show();
+						$('.p2,.p1,.p4').hide();
+						$(this).addClass('tq90');
+						$('.e2,.e1,.e4').removeClass('tq90');
+					})
+					$('.e4').click(function(){
+						$('.p4').show();
+						$('.p2,.p3,.p1').hide();
+						$(this).addClass('tq90');
+						$('.e2,.e3,.e1').removeClass('tq90');
+					})
+				})
+			</script>
+		</div>
+		<div class="aside">
+			<div class="tq3">
+				<h3>人名</h3>
+			</div>
+			<div style="height: 240px;">
+				<img src="images/rw.jpg" alt="">
+				<h3 style="margin-top: -190px;margin-left: 200px;">市委书记 人名</h3>
+				
+			</div>
+			<div style="border-bottom: 2px solid #0068b7;">
+				<h3 style="background: #0068b7;color: #fff;height: 40px;line-height: 40px;text-align: center;width: 120px;">人物简介</h3>
+			</div>
+			<div style="padding: 10px;">
+				王成,男,汉族,1969年6月生,山西朔州市平鲁区人,1987年7月参加工作,1991年1月加入中国共产党，研究生学历，经济学博士。
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		$('#tm21,#tm31,#tm41').hide();
+		$("document").ready(function(){
+			$('#tm1').click(function(){
+				$('#tm11').show();
+				$('#tm21,#tm31,#tm41').hide();
+				$(this).addClass('tq90').siblings().removeClass('tq90');
+			})
+			$('#tm2').click(function(){
+				$('#tm21').show();
+				$('#tm11,#tm31,#tm41').hide();
+				$(this).addClass('tq90').siblings().removeClass('tq90');
+			})
+			$('#tm3').click(function(){
+				$('#tm31').show();
+				$('#tm21,#tm11,#tm41').hide();
+				$(this).addClass('tq90').siblings().removeClass('tq90');
+			})
+			$('#tm4').click(function(){
+				$('#tm41').show();
+				$('#tm21,#tm11,#tm41').hide();
+				$(this).addClass('tq90').siblings().removeClass('tq90');
+			})
+		})
+	</script>
+</body>
+</html>

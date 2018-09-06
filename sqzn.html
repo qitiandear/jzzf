@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style3.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">政务公开</a> >
+			<a href="">依申请公开</a> >
+			<a href="">申请流程</a>
+		</em>
+	</div>
+	<!-- 内容展示 -->
+	<div id="zwgkcont">
+		<div class="side">
+			<ul id="side1">
+				<h3><div class="i"></div>政府信息公开</h3>
+				<li onclick="location.href='https://www.baidu.com'">领导之窗</li>
+				<li onclick="location.href=''" style="background-position: 20% -2096px;">信息公开指南</li>
+				<li onclick="location.href='infomation.html'" style="background-position: 20% -411px;">政府信息公开目录</li>
+				<li onclick="location.href=''" style="background-position: 20% -581px;">信息公开制度与保障</li>
+				<li onclick="location.href=''" style="background-position: 20% -327px;">信息公开工作年报</li>
+				<li onclick="location.href=''" style="background-position: 20% -242px;">依申请公开</li>
+				<li onclick="location.href=''" style="background-position: 20% -327px;">政策解读</li>
+			</ul>
+			<ul class="side3">
+				<li id="s31">
+					<div class="zwgki"></div>
+					重点领域信息公开
+				</li>
+				<li id="s32">
+					<div class="zwgki" style="background-position: 20px -1058px;background-color: #E3292A;"></div>
+					权责清单
+				</li>
+			</ul>
+		</div>
+		<div class="aside">
+			<div style="height: 60px;width: 888px;">
+				<div class="sq active" id="sq1">申请指南</div>
+				<div class="sq tqmore" id="sq2">申请流程</div>
+				<div class="tqque"></div>
+			</div>
+			<div id="text1">
+				依申请公开申请指南
+			</div>
+			<div id="text2">
+				依申请公开申请流程
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		var h1 = $('.side').outerHeight();
+		var h2 = $('.aside').outerHeight();
+		if(h1>h2){
+			$('#zwgkcont').height(h1);
+		}else{
+			$('#zwgkcont').height(h2);
+		}
+		$(function(){
+			$('#sq1').click(function(){
+				$('#text1').show();
+				$('#text2').hide();
+				$(this).addClass('active').removeClass('tqmore');
+				$('#sq2').removeClass('active').addClass('tqmore');
+				$('.tqque').css('margin-left','75px');
+			})
+			$('#sq2').click(function(){
+				$('#text2').show();
+				$('#text1').hide();
+				$(this).addClass('active').removeClass('tqmore');
+				$('#sq1').removeClass('active').addClass('tqmore');
+				$('.tqque').css('margin-left','255px');
+			})
+		})
+	</script>
+</body>
+</html>

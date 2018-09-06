@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="../js/jquery.js"></script>
+	<link rel="stylesheet" href="../css/jzlsj.css">
+	<script src="../js/jzcom.js"></script>
+	<title>晋中市商务粮食局</title>
+</head>
+<body>
+	<div style="background: #eee;">
+		<div class="welcome">
+			欢迎光临晋中市商务粮食局！
+		</div>
+	</div>
+	<div style="background: #fff;">
+		<div class="logo">
+			<img src="../jzlsjimg/lsjlogo.jpg" alt="">
+			<div class="now">
+				<span class="notice">今天是:</span>
+				<span style="padding-left: 7px;" id="time">2018年8月9日 星期四</span>
+			</div>
+			<form action="">
+				<input type="text" placeholder="请输入关键词">
+				<input type="submit" value="搜索">
+			</form>
+		</div>
+	</div>
+	<div style="background: #3a87d3;" >
+		<ul class="navbar">
+			<li><a href="">网站首页</a></li>
+			<li><a href="">单位概况</a></li>
+			<li><a href="">工作动态</a></li>
+			<li>
+				<a href="" onmouseover="mopen('q1')" onmouseout="mclosetime()">信息公开</a>
+				<dl id="q1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" class="lbox">
+					<dd><a href="">信息公开规定</a></dd>
+					<dd><a href="">信息公开指南</a></dd>
+					<dd><a href="">信息公开目录</a></dd>
+					<dd><a href="">信息公开年报</a></dd>
+					<dd><a href="">依申请公开</a></dd>
+				</dl>
+			</li>
+			<li><a href="">办事服务</a></li>
+			<li><a href="">公众参与</a></li>
+			<li><a href="">便民服务</a></li>
+		</ul>
+	</div>
+	<script src="../js/jzlsj.js"></script>
+	<script>
+		function nowTime(){
+	        var mydate = new Date();
+	        var weekday=new Array(7);
+	        weekday[0]="星期日";
+	        weekday[1]="星期一";
+	        weekday[2]="星期二";
+	        weekday[3]="星期三";
+	        weekday[4]="星期四";
+	        weekday[5]="星期五";
+	        weekday[6]="星期六";
+	        var t = mydate.getDay();
+	        var year = mydate.getFullYear();
+	        var month = mydate.getMonth()+1;
+	        var day = mydate.getDate();
+	        var mytime = year+'年'+month+'月'+day+'日  '+weekday[t];
+	        return mytime;
+	    }
+		$(function(){
+			var t = nowTime();
+			$("#time").html(t);
+		})
+	</script>
+</body>
+</html>

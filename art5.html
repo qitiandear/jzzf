@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+	<script src="js/jquery.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jQuery-jcMarquee.js"></script>
+	<title>晋中政府网</title>
+</head>
+<body>
+	<!-- 顶部 -->
+	<div id="head"></div>
+	<!-- 文章链接 -->
+	<div class="path">
+		<em>您的位置:
+			<a href="">首页</a> >
+			<a href="">一级栏目</a> >
+			<a href="">二级栏目</a> >
+			详细内容
+		</em>
+	</div>
+	<!-- 文章内容展示 -->
+	<div class="content">
+		<h1 id="art2title">标题</h1>
+		<div id="artsh" style="text-align: center;">
+			<span>来源： 发布时间：2018-01-16 浏览次数：203 次</span>
+			<span>【字体：<span id="small">小</span> <span id="big">大</span>】</span>
+		</div>
+		<div id="text" style="margin-bottom: 20px;">的地方的多大对方付费 </div>
+		<div id="artshare">
+			<a href="">【打印正文】</a>
+			<div id="share"></div>
+		</div>
+		<div class="rela">
+			<h3>相关信息</h3>
+		</div>
+		<div class="rela">
+			<div style="margin-top: 20px;">暂无资料</div>
+		</div>
+		<div>上一篇：</div>
+		<div>下一篇：</div>
+	</div>
+	<!-- 底部 -->
+	<div id="footer"></div>
+	<script>
+		$('#head').load('head.html');
+		$('#footer').load('footer.html');
+		$('#small').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = --fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+		$('#big').click(function(){
+			var fz = $('#text').css('font-size');
+			fz = fz.substring(0,fz.length-2);
+			var fzc = ++fz;
+			fzc = fzc+'px';
+			$('#text').css('font-size',''+fzc+'');
+		})
+	</script>
+</body>
+</html>
